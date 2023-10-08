@@ -60,8 +60,8 @@ We welcome contributions! Please refer to our [Contribution Guidelines](CONTRIBU
 
 ## License
 
-This project is licensed under the [License Name](LICENSE) - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the [MIT](LICENSE) - see the [MIT](LICENSE) file for details.
 
 ---
 
-You can customize this template by replacing `[Project Name]`, updating the sections, and adding specific project details to fit your open source science projects marketplace.
+You can customize this template by replacing , updating the sections, and adding specific project details to fit your open source science projects marketplace.
