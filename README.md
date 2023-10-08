@@ -40,8 +40,11 @@ Host your project with us to:
 - Foster a community of passionate contributors aligned with your research goals.
 - Amplify the impact of your research by promoting open access and knowledge sharing.
 
-#Screenshorts
+#Screenshorts of  workflow
 
+
+![0004](https://github.com/bava-kurian/SciCommune/assets/115803124/98a39345-31ed-4982-bf4e-587941e9e2d0)
+![0005](https://github.com/bava-kurian/SciCommune/assets/115803124/c8deb9c4-fb39-4015-9954-c04f06b04a17)
 
 
 
