@@ -20,6 +20,7 @@ Welcome to Sci-Commune a marketplace for open source science projects. This plat
 - Facilitate the exchange of knowledge and ideas in various scientific domains.
 - Build a global community of scientists, researchers, and contributors.
 - Promote open access to scientific research and encourage transparent sharing of knowledge.
+- Used ML to to suggest the best project for contributers 
 
 
 ## For Contributors
@@ -27,7 +28,7 @@ Welcome to Sci-Commune a marketplace for open source science projects. This plat
 Join our scientific community to:
 
 - Contribute your expertise to cutting-edge research projects.
-- Enhance your skills and gain practical experience in your domain.
+- Enhance your skills and gain practical experience in your domain hence scoring medels and conquering leagues
 - Collaborate with project hosts and fellow contributors.
 - Showcase your contributions and increase your visibility in the scientific community.
 
