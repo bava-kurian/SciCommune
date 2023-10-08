@@ -3,7 +3,7 @@
 
 ## Overview
 
-Welcome to [Project Name], a marketplace for open source science projects. This platform facilitates collaboration and knowledge exchange among scientists, researchers, and enthusiasts worldwide.
+Welcome to Sci-Commune a marketplace for open source science projects. This platform facilitates collaboration and knowledge exchange among scientists, researchers, and enthusiasts worldwide.
 
 ## Table of Contents
 
