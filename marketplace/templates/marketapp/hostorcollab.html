@@ -1,0 +1,72 @@
+<style>
+    section{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+    .login{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h2{
+        text-align: center;
+    }
+    h3{
+      text-align:justify;
+      margin: 20px;
+    }
+   #btn{
+        background-color:aqua!important;
+    }
+    p{
+        text-align: center;
+    }
+
+
+</style>
+{%extends 'marketapp/base.html'%}
+{% block baseblock%}
+
+<section >
+
+<h3>What are you here for:</h3>
+<p>
+    As a project host, you have the platform to showcase your scientific initiatives and collaborate with a diverse pool of talented contributors.
+    <br> Harness the power of collective intelligence and drive your research forward by openly sharing your projects. Engage with a global community of scientists and enthusiasts passionate about making a difference.
+</p>
+
+<div class="buttons">
+    <button type="button" class="btn btn-primary"><a href=""></a>Host a Project</button>
+    <a href="{%url 'productslist'%}"><button type="button" class="btn btn-primary">Collaborate</button></a></div>
+
+    
+
+</section>
+<footer class="py-5 bg-dark">
+   
+    <div class="container"><p class="m-0 text-center text-white">Copyright &copy; SciCommune 2023</p></div>
+<div class="container">
+<div class="section-title center">
+<h2 class>Get in Touch</h2>
+<div class="line">
+
+</div>
+</div>
+<div class="gap"></div>
+<div class="address ">Want to get in touch with me?  just feel free to drop me a line anytime. </div>
+
+<div class="socialmedia">
+<ul class="social-icons">
+    <li><a href="3"><i class="fa-brands fa-instagram "></i></a></li>
+    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+    <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+</ul>
+
+</div>            
+</div>
+</footer>
+{%endblock%}

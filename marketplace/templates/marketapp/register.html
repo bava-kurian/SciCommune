@@ -1,0 +1,92 @@
+<style>
+    .form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+    .login{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form a{
+      text-decoration: underline!important;
+
+    }
+    .form .signin{
+      margin-top: 3rem !important;
+    }
+    h2{
+        text-align: center;
+    }
+    h3{
+      text-align: center;
+      padding:50;
+    }
+   #btn{
+        background-color:aqua!important;
+    }
+
+</style>
+{%extends 'marketapp/base.html'%}
+{% block baseblock%}
+
+<section >
+
+    <h2>Regitser</h2>
+
+  
+    <div class = "login">  
+      
+        {% if messages %}  
+            <ul>   
+                {% for message in messages %}  
+                    <li>{{ message }}</li>  
+                    {% endfor %}  
+            </ul>   
+        {% endif %}  
+          
+        <h3>Join us by registering</h3>  
+      
+             <form method="post" class='form' >  
+                 {% csrf_token %}  
+                 <table class="text-white">  
+                    {{ form.as_p }}  
+                     <tr>  
+                        <td></td>  
+                        <td><input type="submit" name="submit" value="Register" class='btn btn-primary' id="btn" /></td>  
+                    </tr>  
+                 </table>  
+             </form>  
+         </div>  
+
+    
+
+</section>
+<footer class="py-5 bg-dark">
+    <div class="container"><p class="m-0 text-center text-white">Copyright &copy; SciCommune 2023</p></div>
+    <div class="container"><p class="m-0 text-center text-white">Copyright &copy; SciCommune 2023</p></div>
+<div class="container">
+<div class="section-title center">
+<h2 class>Get in Touch</h2>
+<div class="line">
+
+</div>
+</div>
+<div class="gap"></div>
+<div class="address ">Want to get in touch with me?  just feel free to drop me a line anytime. </div>
+
+<div class="socialmedia">
+<ul class="social-icons">
+    <li><a href="https://instagram.com/_.reeba_.rebecca?igshid=MzMyNGUyNmU2YQ=="><i class="fa-brands fa-instagram "></i></a></li>
+    <li><a href="https://www.linkedin.com/in/reeba-rebecca-varghese-6196b1207"><i class="fa-brands fa-linkedin"></i></a></li>
+    <li><a href="https://x.com/reeba_rebecca?t=Y8PuZT1Y7xlEplByWi7vKw&s=08"><i class="fa-brands fa-x-twitter"></i></a></li>
+    <li><a href="mailto:rebeccavarghese30@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+</ul>
+
+</div>            
+</div>
+</footer>
+{%endblock%}

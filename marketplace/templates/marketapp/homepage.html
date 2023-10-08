@@ -1,0 +1,116 @@
+{%extends 'marketapp/base.html'%}
+{%load static%}
+    {%block baseblock%}
+
+    <style>
+        .hero {
+            height: 100vh;
+            background-color: white;
+            background-size: cover;
+            text-align: center;
+            color: #000000;
+            padding: 100px 0;
+        }
+
+        .about{
+            height: 100vh;
+            background-color: white;
+            background-size: cover;
+            text-align: center;
+            color: #000000;
+            padding: 100px 0;
+            margin-bottom: 10%;
+        }
+        
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .about h3{
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        
+        .button {
+            display: inline-block;
+            background-color:aqua;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .button:hover {
+            background-color: #ff3300;
+        }
+        img{
+            margin-top: -150px;
+            width:500px;
+            height:500px;
+        }
+        ul {
+            list-style-type: none;
+        }
+        .about h2,h4,h5,p{
+margin: 20px;
+        }
+    </style>
+</header>
+<section class="hero">
+
+<img src="{% static 'logo1.jpeg'%}" alt="">
+    {%if request.user.is_authenticated%}
+    <div class="nav-item"><a class="nav-link" > <a href="{% url 'productslist' %}"class="button">Projects </a></a></div>
+{%else%}
+<div class="nav-item"><a class="nav-link" > <a href="{% url 'productslist' %}" class="button">Join us </a></a></div>
+
+ {%endif%}
+
+</section>
+<section class="about" id="about">
+    <h2 >About</h2>
+
+    <h4>Unleash your potential dive into open source and make a difference today</h4>
+<h5>Are you ready to be a part of groundbreaking scientific projects?</h5> 
+
+
+<p>
+    Welcome to Sci-Commune, the go-to marketplace for open source science projects! As a project host, you have the platform to showcase your scientific initiatives and collaborate with a diverse pool of talented contributors. Harness the power of collective intelligence and drive your research forward by openly sharing your projects. Engage with a global community of scientists and enthusiasts passionate about making a difference. Be a catalyst for collaborative science and foster a culture of openness and progress. Host your project with us and accelerate the pace of scientific innovation.
+</p>
+
+
+
+</section>
+
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container"><p class="m-0 text-center text-white">Copyright &copy; SciCommune 2023</p></div>
+        <div class="container">
+            <div class="section-title center">
+                <h2 class>Get in Touch</h2>
+                <div class="line">
+    
+                </div>
+            </div>
+            <div class="address ">Want to get in touch with us?  just feel free to drop us a line anytime. </div>
+            
+            <div class="socialmedia">
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="h#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                </ul>
+    
+            </div>            
+        </div>
+    </footer>
+
+    {%endblock%}

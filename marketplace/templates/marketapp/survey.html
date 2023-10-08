@@ -1,0 +1,82 @@
+<style>
+    .form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+    .login{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form a{
+      text-decoration: underline!important;
+
+    }
+    .form .signin{
+      margin-top: 1rem !important;
+    }
+    h2{
+        text-align: center;
+    }
+    h3{
+      text-align: center;
+      padding:50;
+    }
+    h5{
+        margin: 2rem;
+    }
+   #btn{
+        background-color:aqua!important;
+    }
+
+</style>
+{%extends 'marketapp/base.html'%}
+{% block baseblock%}
+
+<section >
+    <div class = "login"> 
+          
+        <h3>Just a step to give you a better experience,</h3>  
+             <form method="post" class='form' >  
+                 {% csrf_token %}  
+                 <table class="text-white">  
+                    <h5>Tell us how you can contribute to a project:</h5>
+                    {{ form.description }}
+                    <h5>Use tag to describe your skills:</h5>
+                    {{form.tags}}
+                    <p>(single words spearated by a space)</p>
+                        <td><input type="submit" name="submit" value="Start Collaborating" class='btn btn-warning' id="btn" /></td>    
+                 </table>  
+             </form>  
+         </div>  
+
+    
+
+</section>
+<footer class="py-5 bg-dark">
+    <div class="container"><p class="m-0 text-center text-white">Copyright &copy; SciCommune 2023</p></div>
+<div class="container">
+<div class="section-title center">
+<h2 class>Get in Touch</h2>
+<div class="line">
+
+</div>
+</div>
+<div class="gap"></div>
+<div class="address ">Want to get in touch with me?  just feel free to drop me a line anytime. </div>
+
+<div class="socialmedia">
+<ul class="social-icons">
+    <li><a href="3"><i class="fa-brands fa-instagram "></i></a></li>
+    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+    <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+</ul>
+
+</div>            
+</div>
+</footer>
+{%endblock%}
